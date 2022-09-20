@@ -1,0 +1,41 @@
+.logo {
+  color: var(--color-two);
+  font-family: var(--font-one);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  text-decoration: none;
+  display: inline-block;
+
+  &__page-header {
+    margin-right: 90px;
+    padding-bottom: 24px;
+    padding-top: 24px;
+  }
+}
+
+.logo__second-part {
+  font-family: var(--font-one);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  text-decoration: none;
+
+  &_dark {
+    color: var(--color-six);
+  }
+}
+.logo__page-footer {
+  margin-bottom: 20px;
+}
+.logo__second-part {
+  font-family: var(--font-one);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  text-decoration: none;
+
+  &_light {
+    color: var(--color-one);
+  }
+}

@@ -1,0 +1,34 @@
+.addresses-list__street {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--color-one);
+  text-decoration: none;
+  font-style: normal;
+  transition: color var(--transition-duration-function);
+
+  &:hover,
+  &:focus {
+    @extend %hover-color;
+  }
+}
+
+.addresses-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: flex-start;
+  @extend %list-style;
+}
+.addresses-list__link {
+  font-size: 14px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  font-style: normal;
+  transition: color var(--transition-duration-function);
+
+  &:hover,
+  &:focus {
+    @extend %hover-color;
+  }
+}

@@ -1,0 +1,29 @@
+.main-section {
+  background-color: var(--bg-color);
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/main/background-main.jpg");
+  background-repeat: no-repeat;
+  background-size: 1600px;
+  background-position: center;
+
+  &__header {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.37;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--color-one);
+    margin: 0 auto 30px auto;
+    width: 700px;
+  }
+  &__container {
+    display: flex;
+    flex-direction: column;
+  }
+}

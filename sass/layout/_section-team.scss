@@ -1,0 +1,23 @@
+.section-team {
+  background-color: var(--color-four);
+  display: flex;
+  flex-direction: column;
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  &__section-header {
+    margin-bottom: 50px;
+  }
+}
+
+.section-team__list {
+  display: flex;
+  gap: 30px;
+  @extend %list-style;
+}
+.section-team__element {
+  background-color: var(--color-one);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}

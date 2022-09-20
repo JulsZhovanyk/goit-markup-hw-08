@@ -1,0 +1,19 @@
+.overlay {
+  position: absolute;
+  left: 0;
+  bottom: 70px;
+  height: 70px;
+  width: 100%;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--color-one);
+  background: rgba(47, 48, 58, 0.8);
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transform: translateY(100%);
+  transition: transform var(--transition-duration-function);
+}
