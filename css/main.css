@@ -717,7 +717,7 @@ img {
   background-color: var(--color-two);
   border-radius: 2px;
   position: absolute;
-  bottom: -3px;
+  bottom: -1px;
 }
 
 .contacts__element:not(:last-child) {
@@ -736,7 +736,6 @@ img {
   align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
-  display: inline-block;
   transition: color var(--transition-duration-function);
 }
 .contacts__icon {
