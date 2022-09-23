@@ -151,34 +151,58 @@
           <ul class="section-works__list">
             <li class="section-works__element">
               <div class="section-works__img-wrapper">
-                <img
-                  srcset="./images/main/laptop_desktop@2x.jpg 2x"
-                  src="./images/main/laptop_desktop.jpg"
-                  alt="Процес друкування на клавіатурі"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/main/laptop_desktop.webp    1x,
+                      ./images/main/laptop_desktop@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <img
+                    srcset="./images/main/laptop_desktop@2x.jpg 2x"
+                    src="./images/main/laptop_desktop.jpg"
+                    alt="Процес друкування на клавіатурі"
+                  />
+                </picture>
                 <p class="overlay">Десктопні додатки</p>
               </div>
             </li>
             <li class="section-works__element">
               <div class="section-works__img-wrapper">
-                <img
-                  srcset="./images/main/phone_desktop@2x.jpg 2x"
-                  src="./images/main/phone_desktop.jpg"
-                  alt="Дизайн мобільних сервісів"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/main/phone_desktop.webp    1x,
+                      ./images/main/phone_desktop@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <img
+                    srcset="./images/main/phone_desktop@2x.jpg 2x"
+                    src="./images/main/phone_desktop.jpg"
+                    alt="Дизайн мобільних сервісів"
+                  />
+                </picture>
                 <p class="overlay">Мобільні додатки</p>
               </div>
             </li>
             <li class="section-works__element">
               <div class="section-works__img-wrapper">
-                <img
-                  srcset="./images/main/tablet_desktop@2x.jpg 2x"
-                  src="./images/main/tablet_desktop.jpg"
-                  alt="Вибір кольору за допомогою планшета"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/main/tablet_desktop.webp    1x,
+                      ./images/main/tablet_desktop@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <img
+                    srcset="./images/main/tablet_desktop@2x.jpg 2x"
+                    src="./images/main/tablet_desktop.jpg"
+                    alt="Вибір кольору за допомогою планшета"
+                  />
+                </picture>
                 <p class="overlay">Дизайнерські рішення</p>
               </div>
             </li>
@@ -220,8 +244,6 @@
                 <img
                   src="./images/main/ihor_mobile.jpg"
                   alt="Ігор Дем'яненко"
-                  width="270"
-                  height="260"
                 />
               </picture>
               <div class="worker">
@@ -260,12 +282,30 @@
               </div>
             </li>
             <li class="section-team__element">
-              <img
-                src="./images/main/olga.jpg"
-                alt="Ольга Рєпіна"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/main/olga_desktop.jpg    1x,
+                    ./images/main/olga_desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/main/olga_tablet.jpg    1x,
+                    ./images/main/olga_tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/main/olga_mobile.jpg    1x,
+                    ./images/main/olga_mobile@2x.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+                <img src="./images/main/olga_mobile.jpg" alt="Ольга Рєпіна" />
+              </picture>
               <div class="worker">
                 <h3 class="worker__name">Ольга Рєпіна</h3>
                 <p lang="en" class="worker__info">Frontend Developer</p>
@@ -302,12 +342,33 @@
               </div>
             </li>
             <li class="section-team__element">
-              <img
-                src="./images/main/mykola.jpg"
-                alt="Микола Тарасов"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/main/mykola_desktop.jpg    1x,
+                    ./images/main/mykola_desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/main/mykola_tablet.jpg    1x,
+                    ./images/main/mykola_tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/main/mykola_mobile.jpg    1x,
+                    ./images/main/mykola_mobile@2x.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+                <img
+                  src="./images/main/mykola_mobile.jpg"
+                  alt="Микола Тарасов"
+                />
+              </picture>
               <div class="worker">
                 <h3 class="worker__name">Микола Тарасов</h3>
                 <p lang="en" class="worker__info">Marketing</p>
@@ -344,12 +405,33 @@
               </div>
             </li>
             <li class="section-team__element">
-              <img
-                src="./images/main/myhailo.jpg"
-                alt="Михайло Єрмаков"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/main/myhailo_desktop.jpg    1x,
+                    ./images/main/myhailo_desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/main/myhailo_tablet.jpg    1x,
+                    ./images/main/myhailo_tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/main/myhailo_mobile.jpg    1x,
+                    ./images/main/myhailo_mobile@2x.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+                <img
+                  src="./images/main/myhailo_mobile.jpg"
+                  alt="Михайло Єрмаков"
+                />
+              </picture>
               <div class="worker">
                 <h3 class="worker__name">Михайло Єрмаков</h3>
                 <p lang="en" class="worker__info">UI Designer</p>
