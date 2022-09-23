@@ -152,7 +152,8 @@
             <li class="section-works__element">
               <div class="section-works__img-wrapper">
                 <img
-                  src="./images/main/laptop.jpg"
+                  srcset="./images/main/laptop_desktop@2x.jpg 2x"
+                  src="./images/main/laptop_desktop.jpg"
                   alt="Процес друкування на клавіатурі"
                   width="370"
                 />
@@ -162,7 +163,8 @@
             <li class="section-works__element">
               <div class="section-works__img-wrapper">
                 <img
-                  src="./images/main/phone.jpg"
+                  srcset="./images/main/phone_desktop@2x.jpg 2x"
+                  src="./images/main/phone_desktop.jpg"
                   alt="Дизайн мобільних сервісів"
                   width="370"
                 />
@@ -172,7 +174,8 @@
             <li class="section-works__element">
               <div class="section-works__img-wrapper">
                 <img
-                  src="./images/main/tablet.jpg"
+                  srcset="./images/main/tablet_desktop@2x.jpg 2x"
+                  src="./images/main/tablet_desktop.jpg"
                   alt="Вибір кольору за допомогою планшета"
                   width="370"
                 />
@@ -192,12 +195,35 @@
           </h2>
           <ul class="section-team__list">
             <li class="section-team__element">
-              <img
-                src="./images/main/ihor.jpg"
-                alt="Ігор Дем'яненко"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/main/ihor_desktop.jpg    1x,
+                    ./images/main/ihor_desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/main/ihor_tablet.jpg    1x,
+                    ./images/main/ihor_tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/main/ihor_mobile.jpg    1x,
+                    ./images/main/ihor_mobile@2x.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+                <img
+                  src="./images/main/ihor_mobile.jpg"
+                  alt="Ігор Дем'яненко"
+                  width="270"
+                  height="260"
+                />
+              </picture>
               <div class="worker">
                 <h3 class="worker__name">Ігор Дем'яненко</h3>
                 <p lang="en" class="worker__info">Product Designer</p>
