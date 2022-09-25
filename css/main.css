@@ -710,6 +710,20 @@ img {
   height: 100%;
   background-color: var(--color-one);
   z-index: 100;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.mobile-menu.is-open {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.mobile-menu__container {
+  position: relative;
+  padding-left: 40px;
 }
 
 .mobile-menu__link,
