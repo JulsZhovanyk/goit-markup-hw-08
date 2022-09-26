@@ -1058,6 +1058,11 @@ img {
   text-decoration: none;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .bigger {
+    padding-bottom: 36px;
+  }
+}
 .overlay-pf {
   position: absolute;
   left: 0;
@@ -1743,15 +1748,15 @@ img {
 }
 .section-portfolio {
   background-color: var(--color-one);
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .section-portfolio__list {
   display: flex;
   gap: 10px;
-  margin-bottom: 50px;
-  justify-content: center;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
 }
 
 .section-portfolio__btn {
@@ -1791,10 +1796,6 @@ img {
   gap: 30px;
 }
 
-.section-portfolio__element {
-  width: 370px;
-}
-
 .section-portfolio__link {
   text-decoration: none;
   display: block;
@@ -1812,6 +1813,24 @@ img {
   overflow: hidden;
 }
 
+@media screen and (max-width: 767px) {
+  .section-portfolio__list {
+    width: 326px;
+  }
+  .section-portfolio__element {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .section-portfolio__list {
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .section-portfolio__element {
+    width: 334px;
+  }
+}
 @keyframes opening {
   0% {
     transform: scale(0);
