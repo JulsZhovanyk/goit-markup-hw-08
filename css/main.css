@@ -634,11 +634,17 @@ img {
 
 .section-header {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.18;
   text-align: center;
 }
 
+@media screen and (min-width: 1200px) {
+  .section-header {
+    font-size: 36px;
+    line-height: 1.16;
+  }
+}
 @media screen and (max-width: 767px) {
   .logo {
     padding-top: 16px;
@@ -1611,6 +1617,9 @@ img {
   }
   .section-team__section-header {
     margin-bottom: 50px;
+  }
+  .section-team__element {
+    width: 270px;
   }
 }
 .section-clients {
