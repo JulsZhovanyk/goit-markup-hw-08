@@ -2,11 +2,11 @@
   background-color: var(--color-four);
   display: flex;
   flex-direction: column;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
   &__section-header {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
 }
 
@@ -14,10 +14,32 @@
   display: flex;
   gap: 30px;
   @extend %list-style;
+  flex-direction: column;
 }
 .section-team__element {
   background-color: var(--color-one);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+@media screen and (min-width: 768px) {
+  .section-team__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .section-team__element {
+    width: 334px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section-team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+    &__section-header {
+      margin-bottom: 50px;
+    }
+  }
 }

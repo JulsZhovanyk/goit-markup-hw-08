@@ -1574,16 +1574,17 @@ img {
   background-color: var(--color-four);
   display: flex;
   flex-direction: column;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .section-team__section-header {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .section-team__list {
   display: flex;
   gap: 30px;
+  flex-direction: column;
 }
 
 .section-team__element {
@@ -1592,6 +1593,26 @@ img {
   border-radius: 0px 0px 4px 4px;
 }
 
+@media screen and (min-width: 768px) {
+  .section-team__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .section-team__element {
+    width: 334px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section-team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .section-team__section-header {
+    margin-bottom: 50px;
+  }
+}
 .section-clients {
   padding-top: 104px;
   padding-bottom: 94px;
