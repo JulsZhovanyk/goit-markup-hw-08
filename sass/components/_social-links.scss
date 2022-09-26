@@ -29,6 +29,11 @@
   @include icon-size(20px, 20px);
   fill: var(--color-one);
 }
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .application__btn {
+    margin-top: 20px;
+  }
+}
 @media screen and (max-width: 767px) {
   .social-links__item:nth-child(4) {
     margin-bottom: 60px;

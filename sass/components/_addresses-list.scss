@@ -38,7 +38,13 @@
     margin-bottom: 60px;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+}
 @media screen and (min-width: 1200px) {
+  .addresses-and-social-wrapper {
+    display: flex;
+    align-items: baseline;
+  }
   // .addresses-list__street {
   //   font-size: 14px;
   //   line-height: 1.7;

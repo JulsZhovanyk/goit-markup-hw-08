@@ -42,7 +42,6 @@
   border-radius: 4px;
   transition: box-shadow var(--transition-duration-function),
     background-color var(--transition-duration-function);
-  margin-top: 20px;
 
   &:hover,
   &:focus {
@@ -57,7 +56,10 @@
   margin-left: 10px;
   margin-right: 13px;
 }
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .application__btn {
+    margin-top: 20px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .application-mail {
@@ -66,62 +68,4 @@
   .input-and-btn {
     display: flex;
   }
-  // .application-mail {
-  //   display: flex;
-  //   flex-direction: column;
-  // }
-  // .application__text {
-  //   @include font(14px, 700, 16px);
-  //   text-transform: uppercase;
-  //   color: var(--color-one);
-  //   margin-bottom: 20px;
-  //   display: block;
-  // }
-  // .application__form {
-  //   background-color: transparent;
-  //   border: 1px solid rgba(255, 255, 255, 0.3);
-  //   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  //   border-radius: 4px;
-  //   width: 358px;
-  //   height: 50px;
-  //   color: var(--color-one);
-  //   margin-right: 12px;
-  //   padding-left: 16px;
-  // }
-  // .application__btn {
-  //   font-weight: 700;
-  //   font-size: 16px;
-  //   line-height: 1.88;
-  //   display: flex;
-  //   justify-content: center;
-  //   align-items: center;
-  //   text-align: center;
-  //   letter-spacing: 0.06em;
-  //   color: var(--color-one);
-  //   padding-top: 10px;
-  //   padding-bottom: 10px;
-  //   padding-left: 28px;
-  //   background-color: var(--color-two);
-  //   border: none;
-  //   cursor: pointer;
-  //   width: 200px;
-  //   height: 50px;
-  //   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  //   border-radius: 4px;
-  //   transition: box-shadow var(--transition-duration-function),
-  //     background-color var(--transition-duration-function);
-
-  //   &:hover,
-  //   &:focus {
-  //     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  //     background-color: var(--color-eight);
-  //   }
-  // }
-
-  // .application__icon {
-  //   @include icon-size(24px, 24px);
-  //   fill: var(--color-one);
-  //   margin-left: 10px;
-  //   margin-right: 13px;
-  // }
 }
