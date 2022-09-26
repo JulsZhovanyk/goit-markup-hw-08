@@ -654,6 +654,10 @@ img {
   text-decoration: none;
   display: inline-block;
 }
+.logo__page-header {
+  margin-right: 90px;
+}
+
 .logo__second-part {
   font-family: var(--font-one);
   font-weight: 700;
@@ -754,15 +758,13 @@ img {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.8;
-  align-items: center;
+  line-height: 1.88;
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--color-one);
   background-color: var(--color-two);
   cursor: pointer;
   border: none;
-  width: 216px;
   height: 50px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -771,16 +773,30 @@ img {
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
-  padding: 10px 30px;
   transition: filter var(--transition-duration-function), background-color var(--transition-duration-function);
 }
 .button__main-section:hover, .button__main-section:focus {
-  width: 216px;
   height: 50px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   background-color: var(--color-eight);
 }
 
+@media screen and (max-width: 1199px) {
+  .button {
+    width: 200px;
+  }
+  .button__main-section:hover, .button__main-section:focus {
+    width: 200px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .button {
+    width: 216px;
+  }
+  .button__main-section:hover, .button__main-section:focus {
+    width: 216px;
+  }
+}
 .overlay {
   position: absolute;
   left: 0;
@@ -1386,19 +1402,15 @@ img {
   padding-bottom: 200px;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/main/background-main_mobile.jpg");
   background-repeat: no-repeat;
-  background-size: 1600px;
   background-position: center;
 }
 .main-section__header {
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.37;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--color-one);
   margin: 0 auto 30px auto;
-  width: 700px;
 }
 .main-section__container {
   display: flex;
@@ -1425,9 +1437,21 @@ img {
     background-image: url("../images/main/background-main_tablet@2x.jpg");
   }
 }
+@media screen and (max-width: 1199px) {
+  .main-section__header {
+    font-size: 26px;
+    line-height: 1.62;
+    width: 360px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .main-section {
     background-image: url("../images/main/background-main_desktop.jpg");
+  }
+  .main-section__header {
+    font-size: 44px;
+    line-height: 1.37;
+    width: 700px;
   }
 }
 @media screen and (min-device-pixels-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {

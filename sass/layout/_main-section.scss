@@ -8,19 +8,15 @@
     ),
     url("../images/main/background-main_mobile.jpg");
   background-repeat: no-repeat;
-  background-size: 1600px;
   background-position: center;
 
   &__header {
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.37;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--color-one);
     margin: 0 auto 30px auto;
-    width: 700px;
   }
   &__container {
     display: flex;
@@ -52,10 +48,22 @@
     background-image: url("../images/main/background-main_tablet@2x.jpg");
   }
 }
-
+@media screen and (max-width: 1199px) {
+  .main-section__header {
+    font-size: 26px;
+    line-height: 1.62;
+    width: 360px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .main-section {
     background-image: url("../images/main/background-main_desktop.jpg");
+
+    &__header {
+      font-size: 44px;
+      line-height: 1.37;
+      width: 700px;
+    }
   }
 }
 @media screen and (min-device-pixels-ratio: 2) and (min-width: 1200px),
