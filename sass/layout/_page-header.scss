@@ -129,7 +129,7 @@
     position: relative;
   }
   .contacts {
-    display: block;
+    display: flex;
   }
   .open-mobile-menu-btn {
     display: none;
@@ -138,10 +138,6 @@
   .contacts__element:not(:last-child) {
     margin-right: 50px;
   }
-  // .contacts__link {
-  //   padding-top: 32px;
-  //   padding-bottom: 32px;
-  // }
   .page-header__container {
     display: flex;
     justify-content: space-between;

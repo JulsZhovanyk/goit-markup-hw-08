@@ -639,6 +639,12 @@ img {
   text-align: center;
 }
 
+@media screen and (max-width: 767px) {
+  .logo {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
 .logo {
   color: var(--color-two);
   font-family: var(--font-one);
@@ -648,10 +654,6 @@ img {
   text-decoration: none;
   display: inline-block;
 }
-.logo__page-header {
-  margin-right: 90px;
-}
-
 .logo__second-part {
   font-family: var(--font-one);
   font-weight: 700;
@@ -1360,7 +1362,7 @@ img {
     position: relative;
   }
   .contacts {
-    display: block;
+    display: flex;
   }
   .open-mobile-menu-btn {
     display: none;
