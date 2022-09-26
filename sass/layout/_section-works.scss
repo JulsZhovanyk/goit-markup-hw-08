@@ -17,3 +17,8 @@
 .section-works__section-header {
   margin-bottom: 50px;
 }
+@media screen and (max-width: 1199px) {
+  .section-works {
+    display: none;
+  }
+}

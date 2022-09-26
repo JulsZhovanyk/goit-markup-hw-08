@@ -1565,6 +1565,11 @@ img {
   margin-bottom: 50px;
 }
 
+@media screen and (max-width: 1199px) {
+  .section-works {
+    display: none;
+  }
+}
 .section-team {
   background-color: var(--color-four);
   display: flex;
