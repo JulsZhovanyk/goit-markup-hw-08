@@ -1,11 +1,33 @@
 .page-footer {
   background-color: var(--color-five);
-  padding-top: 94px;
-  padding-bottom: 94px;
   display: flex;
 
   &__container {
     display: flex;
     align-items: baseline;
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .addresses-and-social-wrapper {
+    display: flex;
+    gap: 165px;
+    margin-bottom: 60px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .page-footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .page-footer {
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+    &__container {
+      flex-direction: row;
+    }
   }
 }
