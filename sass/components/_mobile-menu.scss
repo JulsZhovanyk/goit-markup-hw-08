@@ -66,6 +66,12 @@
     line-height: 1.17;
     letter-spacing: 0.02em;
     color: var(--color-seven);
+    transition: color var(--transition-duration-function);
+
+    &:hover,
+    &:focus {
+      color: var(--color-two);
+    }
   }
   .mobile-menu__contacts-link_colored {
     font-weight: 500;

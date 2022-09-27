@@ -4,9 +4,15 @@
     background-color: transparent;
     padding: 0;
     line-height: 0;
-  }
-  .open-mobile-menu-btn__icon {
-    width: 40px;
-    height: 40px;
+
+    &__icon {
+      width: 40px;
+      height: 40px;
+      transition: fill var(--transition-duration-function);
+    }
+    &__icon:hover,
+    &__icon:focus {
+      fill: var(--color-two);
+    }
   }
 }

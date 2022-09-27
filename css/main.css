@@ -701,6 +701,10 @@ img {
   .open-mobile-menu-btn__icon {
     width: 40px;
     height: 40px;
+    transition: fill var(--transition-duration-function);
+  }
+  .open-mobile-menu-btn__icon:hover, .open-mobile-menu-btn__icon:focus {
+    fill: var(--color-two);
   }
 }
 @media screen and (max-width: 767px) {
@@ -767,6 +771,10 @@ img {
     line-height: 1.17;
     letter-spacing: 0.02em;
     color: var(--color-seven);
+    transition: color var(--transition-duration-function);
+  }
+  .mobile-menu__contacts-link:hover, .mobile-menu__contacts-link:focus {
+    color: var(--color-two);
   }
   .mobile-menu__contacts-link_colored {
     font-weight: 500;
