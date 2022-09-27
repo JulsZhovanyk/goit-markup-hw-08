@@ -66,7 +66,7 @@
 }
 
 .modal-form__check-field {
-  font-size: 14px;
+  font-size: 9px;
   line-height: 1.71;
   margin-bottom: 20px;
   text-align: center;
@@ -123,7 +123,7 @@
     width: 100%;
     background-color: var(--color-two);
     position: absolute;
-    bottom: 5px;
+    bottom: 2px;
     right: 0;
   }
 }
@@ -150,5 +150,13 @@
   &:focus {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     background-color: var(--color-eight);
+  }
+}
+@media screen and (min-width: 480px) {
+  .modal-form__check-link::after {
+    bottom: 6px;
+  }
+  .modal-form__check-field {
+    font-size: 14px;
   }
 }

@@ -1155,8 +1155,6 @@ img {
 }
 
 .modal {
-  width: 528px;
-  height: 581px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   background: var(--color-one);
@@ -1203,6 +1201,12 @@ img {
   margin-bottom: 12px;
 }
 
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
+}
 .modal-form {
   display: flex;
   flex-direction: column;
@@ -1271,7 +1275,7 @@ img {
 }
 
 .modal-form__check-field {
-  font-size: 14px;
+  font-size: 9px;
   line-height: 1.71;
   margin-bottom: 20px;
   text-align: center;
@@ -1326,7 +1330,7 @@ img {
   width: 100%;
   background-color: var(--color-two);
   position: absolute;
-  bottom: 5px;
+  bottom: 2px;
   right: 0;
 }
 
@@ -1352,6 +1356,14 @@ img {
   background-color: var(--color-eight);
 }
 
+@media screen and (min-width: 480px) {
+  .modal-form__check-link::after {
+    bottom: 6px;
+  }
+  .modal-form__check-field {
+    font-size: 14px;
+  }
+}
 .page-header {
   background-color: var(--color-one);
   border-bottom: 1px solid var(--color-nine);
@@ -1517,11 +1529,6 @@ img {
   flex-direction: column;
 }
 
-@media screen and (min-width: 480px) {
-  .main-section {
-    background-image: url("../images/main/background-main_mobile.jpg");
-  }
-}
 @media screen and (min-width: 480px) and (min-device-pixels-ratio: 2), screen and (min-width: 480px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (min-resolution: 2dppx) {
   .main-section {
     background-image: url("../images/main/background-main_mobile@2x.jpg");
@@ -1576,12 +1583,17 @@ img {
   gap: 30px;
 }
 
+.section-qualities__element {
+  width: 100%;
+}
+
 .section-qualities__logo {
   display: flex;
   border-radius: 4px;
   background-color: var(--color-four);
-  background-size: 270px 120px;
+  background-size: auto;
   margin-bottom: 30px;
+  width: 100%;
   height: 120px;
   justify-content: center;
   align-items: center;
@@ -1608,7 +1620,7 @@ img {
   color: var(--color-seven);
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .section-qualities__element {
     width: 420px;
   }

@@ -24,11 +24,6 @@
     flex-direction: column;
   }
 }
-@media screen and (min-width: 480px) {
-  .main-section {
-    background-image: url("../images/main/background-main_mobile.jpg");
-  }
-}
 @media screen and (min-width: 480px) and (min-device-pixels-ratio: 2),
   screen and (min-width: 480px) and (min-resolution: 192dpi),
   screen and (min-width: 480px) and (min-resolution: 2dppx) {
