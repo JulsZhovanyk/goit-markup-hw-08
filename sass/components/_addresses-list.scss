@@ -39,10 +39,22 @@
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
+  .addresses-list {
+    text-align: center;
+  }
+  .social-links {
+    text-align: center;
+  }
 }
 @media screen and (min-width: 1200px) {
   .addresses-and-social-wrapper {
     display: flex;
     align-items: baseline;
+  }
+  .adresses {
+    text-align: start;
+  }
+  .addresses-list {
+    text-align: start;
   }
 }

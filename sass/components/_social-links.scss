@@ -1,3 +1,6 @@
+.social-links {
+  text-align: center;
+}
 .social-links__text {
   color: var(--color-one);
   font-weight: 700;
@@ -8,6 +11,7 @@
 .social-links__list {
   column-gap: 10px;
   @extend %list-style;
+  justify-content: center;
 }
 
 .social-links__link {
@@ -42,6 +46,7 @@
 @media screen and (min-width: 1200px) {
   .social-links {
     margin-left: 70px;
+    text-align: start;
   }
   // .social-links__text {
   //   color: var(--color-one);
