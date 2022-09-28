@@ -28,19 +28,31 @@
   screen and (min-width: 480px) and (min-resolution: 192dpi),
   screen and (min-width: 480px) and (min-resolution: 2dppx) {
   .main-section {
-    background-image: url("../images/main/background-main_mobile@2x.jpg");
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/main/background-main_mobile@2x.jpg");
   }
 }
 @media screen and (min-width: 768px) {
   .main-section {
-    background-image: url("../images/main/background-main_tablet.jpg");
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/main/background-main_tablet.jpg");
   }
 }
 @media screen and (min-device-pixels-ratio: 2) and (min-width: 768px),
   screen and (min-resolution: 192dpi) and (min-width: 768px),
   screen and (min-resolution: 2dppx) and (min-width: 768px) {
   .main-section {
-    background-image: url("../images/main/background-main_tablet@2x.jpg");
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/main/background-main_tablet@2x.jpg");
   }
 }
 @media screen and (max-width: 1199px) {
@@ -56,9 +68,14 @@
 }
 @media screen and (min-width: 1200px) {
   .main-section {
-    background-image: url("../images/main/background-main_desktop.jpg");
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/main/background-main_desktop.jpg");
     padding-top: 200px;
     padding-bottom: 200px;
+    background-size: 1600px;
 
     &__header {
       font-size: 44px;
@@ -71,6 +88,10 @@
   screen and (min-resolution: 192dpi) and (min-width: 1200px),
   screen and (min-resolution: 2dppx) and (min-width: 1200px) {
   .main-section {
-    background-image: url("../images/main/background-main_desktop@2x.jpg");
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/main/background-main_desktop@2x.jpg");
   }
 }
