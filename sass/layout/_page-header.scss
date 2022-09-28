@@ -61,6 +61,7 @@
   .contacts {
     display: flex;
   }
+
   .open-mobile-menu-btn {
     display: none;
   }
@@ -77,7 +78,7 @@
   .contacts__link {
     font-style: normal;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--color-seven);
@@ -122,6 +123,9 @@
     gap: 10px;
     flex-direction: column;
   }
+  .contacts-wrapper {
+    margin-left: 90px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .menu__item {
@@ -130,6 +134,9 @@
   }
   .contacts {
     display: flex;
+  }
+  .contacts__link {
+    font-size: 14px;
   }
   .open-mobile-menu-btn {
     display: none;
