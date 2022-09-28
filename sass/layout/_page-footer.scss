@@ -9,21 +9,21 @@
     margin-left: auto;
     margin-right: auto;
 
-    @media screen and (min-width: 768px) {
-      display: flex;
+    // @media screen and (min-width: 768px) {
+    //   display: flex;
 
-      align-items: baseline;
-    }
+    //   align-items: baseline;
+    // }
 
-    @media screen and (max-width: 1199px) {
-      flex-wrap: wrap;
-      justify-content: space-around;
-      row-gap: 60px;
-    }
+    // @media screen and (max-width: 1199px) {
+    //   flex-wrap: wrap;
+    //   justify-content: space-around;
+    //   row-gap: 60px;
+    // }
 
-    @media screen and (min-width: 1200px) {
-      justify-content: space-between;
-    }
+    // @media screen and (min-width: 1200px) {
+    //   justify-content: space-between;
+    // }
   }
 }
 @media screen and (min-width: 768px) {
