@@ -598,14 +598,14 @@ img {
 
 @media screen and (min-width: 480px) {
   .container {
-    width: 450px;
+    width: 480px;
     margin-left: auto;
     margin-right: auto;
   }
 }
 @media screen and (min-width: 768px) {
   .container {
-    width: 738px;
+    width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1630,10 +1630,10 @@ img {
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .section-qualities__element {
-    width: 420px;
+    width: 450px;
   }
   .section-qualities__logo {
-    width: 420px;
+    width: 450px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1647,10 +1647,10 @@ img {
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .section-qualities__element {
-    width: 334px;
+    width: 354px;
   }
   .section-qualities__logo {
-    width: 334px;
+    width: 354px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1720,7 +1720,7 @@ img {
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .section-team__element {
-    width: 334px;
+    width: 354px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1752,7 +1752,7 @@ img {
 .section-clients__link {
   border: 1px solid var(--icon-color);
   border-radius: 4px;
-  width: 195px;
+  width: 210px;
   height: 92px;
   display: flex;
   justify-content: center;
@@ -1775,7 +1775,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .section-clients__link {
-    width: 216px;
+    width: 226px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1905,7 +1905,16 @@ img {
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .section-portfolio__element {
-    width: 334px;
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section-portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .section-portfolio__element {
+    width: 370px;
   }
 }
 @keyframes opening {
