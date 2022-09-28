@@ -3,10 +3,11 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
     background-color: var(--color-one);
     z-index: 100;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
 
     visibility: hidden;
     opacity: 0;
@@ -22,6 +23,7 @@
   .mobile-menu__container {
     position: relative;
     padding-left: 40px;
+    padding-bottom: 48px;
   }
   .mobile-menu__list,
   .mobile-menu__contacts-list,
@@ -92,6 +94,10 @@
     padding-left: 10px;
     padding-right: 10px;
     border-right: 1px solid rgba(33, 33, 33, 0.2);
+
+    @media screen and (max-width: 480px) {
+      font-size: 14px;
+    }
   }
   .mobile-menu__social-link_no-pad {
     padding-left: 0;
