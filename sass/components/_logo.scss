@@ -6,10 +6,6 @@
   line-height: 1.2;
   text-decoration: none;
   display: block;
-
-  &__page-header {
-    margin-right: 90px;
-  }
 }
 
 .logo__second-part {
@@ -45,9 +41,16 @@
   .logo__page-footer {
     margin-bottom: 20px;
   }
+  .logo__page-header {
+    margin-right: 87px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .logo {
     text-align: start;
+
+    &__page-header {
+      margin-right: 92px;
+    }
   }
 }

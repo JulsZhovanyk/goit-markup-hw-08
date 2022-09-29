@@ -16,7 +16,6 @@
 .section-clients__link {
   border: 1px solid var(--icon-color);
   border-radius: 4px;
-  width: 210px;
   height: 92px;
   display: flex;
   justify-content: center;
@@ -38,6 +37,14 @@
   .section-clients__link:hover &,
   .section-clients__link:focus & {
     fill: var(--color-two);
+  }
+}
+@media screen and (max-width: 767px) {
+  .section-clients__element {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+  .section-clients__link {
+    width: 100%;
   }
 }
 @media screen and (min-width: 768px) {
