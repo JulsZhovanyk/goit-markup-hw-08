@@ -77,10 +77,14 @@
   }
   .mobile-menu__contacts-link_colored {
     font-weight: 500;
-    font-size: 34px;
+    font-size: 26px;
     line-height: 1.18;
     letter-spacing: 0.02em;
     color: var(--color-two);
+
+    @media screen and (min-width: 480px) {
+      font-size: 34px;
+    }
   }
   .mobile-menu__social-list {
     margin-top: 64px;
@@ -95,8 +99,8 @@
     padding-right: 10px;
     border-right: 1px solid rgba(33, 33, 33, 0.2);
 
-    @media screen and (max-width: 480px) {
-      font-size: 14px;
+    @media screen and (max-width: 479px) {
+      font-size: 11px;
     }
   }
   .mobile-menu__social-link_no-pad {
