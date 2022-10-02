@@ -68,22 +68,14 @@
     line-height: 1.17;
     letter-spacing: 0.02em;
     color: var(--color-seven);
-    transition: color var(--transition-duration-function);
+    transition: color var(--transition-duration-function),
+      transform var(--transition-duration-function);
+    display: block;
 
     &:hover,
     &:focus {
+      transform: scale(1.18);
       color: var(--color-two);
-    }
-  }
-  .mobile-menu__contacts-link_colored {
-    font-weight: 500;
-    font-size: 26px;
-    line-height: 1.18;
-    letter-spacing: 0.02em;
-    color: var(--color-two);
-
-    @media screen and (min-width: 480px) {
-      font-size: 34px;
     }
   }
   .mobile-menu__social-list {

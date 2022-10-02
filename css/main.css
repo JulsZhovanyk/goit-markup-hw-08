@@ -781,30 +781,16 @@ img {
     line-height: 1.17;
     letter-spacing: 0.02em;
     color: var(--color-seven);
-    transition: color var(--transition-duration-function);
+    transition: color var(--transition-duration-function), transform var(--transition-duration-function);
+    display: block;
   }
   .mobile-menu__contacts-link:hover, .mobile-menu__contacts-link:focus {
+    transform: scale(1.18);
     color: var(--color-two);
   }
-  .mobile-menu__contacts-link_colored {
-    font-weight: 500;
-    font-size: 26px;
-    line-height: 1.18;
-    letter-spacing: 0.02em;
-    color: var(--color-two);
-  }
-}
-@media screen and (max-width: 767px) and (min-width: 480px) {
-  .mobile-menu__contacts-link_colored {
-    font-size: 34px;
-  }
-}
-@media screen and (max-width: 767px) {
   .mobile-menu__social-list {
     margin-top: 64px;
   }
-}
-@media screen and (max-width: 767px) {
   .mobile-menu__social-link {
     font-weight: 500;
     font-size: 18px;
