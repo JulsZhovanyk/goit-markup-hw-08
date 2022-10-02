@@ -55,7 +55,9 @@
 
 .section-portfolio__link {
   text-decoration: none;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   transition: box-shadow var(--transition-duration-function);
 
   &:hover,
