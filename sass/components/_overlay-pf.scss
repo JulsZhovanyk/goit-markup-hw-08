@@ -4,12 +4,17 @@
   top: 0;
   height: 100%;
   width: 100%;
-  font-size: 18px;
+  font-size: calc(18 / 480 * 100vw);
   line-height: 1.56;
   color: var(--color-one);
   background: rgba(33, 150, 243, 0.9);
-  padding: 63px 24px;
+  padding: 40px 24px;
 
   transform: translateY(100%);
   transition: transform var(--transition-duration-function);
+
+  @media screen and (min-width: 480px) {
+    font-size: 18px;
+    padding: 63px 24px;
+  }
 }
