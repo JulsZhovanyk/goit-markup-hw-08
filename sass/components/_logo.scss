@@ -18,19 +18,11 @@
   &_dark {
     color: var(--color-six);
   }
-}
-
-.logo__second-part {
-  font-family: var(--font-one);
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
-  text-decoration: none;
-
   &_light {
     color: var(--color-one);
   }
 }
+
 @media screen and (max-width: 767px) {
   .logo {
     padding-top: 16px;
@@ -51,6 +43,8 @@
 
     &__page-header {
       margin-right: 92px;
+      padding-bottom: 24px;
+      padding-top: 24px;
     }
   }
 }
