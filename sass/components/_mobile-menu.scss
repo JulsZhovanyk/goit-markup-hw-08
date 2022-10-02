@@ -14,12 +14,14 @@
     pointer-events: none;
     transition: opacity var(--transition-duration-function),
       visibility var(--transition-duration-function);
+
+    &.is-open {
+      visibility: visible;
+      opacity: 1;
+      pointer-events: auto;
+    }
   }
-  .mobile-menu.is-open {
-    visibility: visible;
-    opacity: 1;
-    pointer-events: auto;
-  }
+
   .mobile-menu__container {
     position: relative;
     padding-left: 40px;
@@ -128,5 +130,10 @@
     .mobile-menu__close-btn:focus & {
       fill: var(--color-two);
     }
+  }
+}
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none;
   }
 }

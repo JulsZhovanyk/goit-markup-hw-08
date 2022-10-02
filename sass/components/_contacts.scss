@@ -5,10 +5,12 @@
   .contacts {
     list-style: none;
     display: flex;
+
+    &__element:not(:last-child) {
+      margin-right: 50px;
+    }
   }
-  .contacts__element:not(:last-child) {
-    margin-right: 50px;
-  }
+
   .contacts__link {
     font-style: normal;
     font-weight: 500;

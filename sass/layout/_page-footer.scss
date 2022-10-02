@@ -6,9 +6,7 @@
     flex-direction: column;
   }
 }
-.addresses {
-  text-align: center;
-}
+
 @media screen and (min-width: 768px) {
   .page-footer__container {
     display: flex;
@@ -22,9 +20,6 @@
   .addresses-and-social-wrapper {
     display: flex;
     gap: 165px;
-  }
-  .addresses {
-    text-align: center;
   }
 }
 @media screen and (max-width: 1199px) {

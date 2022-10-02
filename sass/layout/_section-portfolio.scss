@@ -2,14 +2,16 @@
   background-color: var(--color-one);
   padding-top: 60px;
   padding-bottom: 60px;
+
+  &__list {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 40px;
+    @extend %list-style;
+    flex-wrap: wrap;
+  }
 }
-.section-portfolio__list {
-  display: flex;
-  gap: 10px;
-  margin-bottom: 40px;
-  @extend %list-style;
-  flex-wrap: wrap;
-}
+
 .section-portfolio__btn {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -103,9 +105,9 @@
   .section-portfolio {
     padding-top: 94px;
     padding-bottom: 94px;
-  }
 
-  .section-portfolio__element {
-    width: 370px;
+    &__element {
+      width: 370px;
+    }
   }
 }

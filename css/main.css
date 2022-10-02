@@ -613,12 +613,6 @@ img {
     max-width: 1200px;
   }
 }
-.page-header__container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -711,11 +705,6 @@ img {
 }
 @media screen and (min-width: 768px) {
   .open-mobile-menu-btn {
-    display: none;
-  }
-}
-@media screen and (min-width: 768px) {
-  .mobile-menu {
     display: none;
   }
 }
@@ -856,6 +845,11 @@ img {
     fill: var(--color-two);
   }
 }
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
+}
 .button {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
@@ -922,7 +916,6 @@ img {
   text-align: center;
   padding: 30px;
 }
-
 .worker__name {
   font-weight: 500;
   font-size: 16px;
@@ -974,6 +967,10 @@ img {
   fill: var(--color-one);
 }
 
+.addresses {
+  text-align: center;
+}
+
 .addresses-list__street {
   font-size: 14px;
   line-height: 1.7;
@@ -1006,7 +1003,7 @@ img {
   .addresses-list {
     text-align: center;
   }
-  .social-links {
+  .addresses {
     text-align: center;
   }
 }
@@ -1025,7 +1022,6 @@ img {
 .social-links {
   text-align: center;
 }
-
 .social-links__text {
   color: var(--color-one);
   font-weight: 700;
@@ -1033,7 +1029,6 @@ img {
   text-transform: uppercase;
   margin-bottom: 20px;
 }
-
 .social-links__list {
   column-gap: 10px;
   justify-content: center;
@@ -1067,6 +1062,11 @@ img {
 @media screen and (max-width: 767px) {
   .social-links__item:nth-child(4) {
     margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .social-links {
+    text-align: center;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1174,8 +1174,6 @@ img {
   }
   .application__form {
     width: 358px;
-  }
-  .application__form {
     margin-right: 12px;
   }
 }
@@ -1675,13 +1673,11 @@ img {
   padding-bottom: 60px;
   padding-top: 60px;
 }
-
 .section-qualities__list {
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
-
 .section-qualities__element {
   width: 100%;
 }
@@ -1896,10 +1892,6 @@ img {
   flex-direction: column;
 }
 
-.addresses {
-  text-align: center;
-}
-
 @media screen and (min-width: 768px) {
   .page-footer__container {
     display: flex;
@@ -1913,9 +1905,6 @@ img {
   .addresses-and-social-wrapper {
     display: flex;
     gap: 165px;
-  }
-  .addresses {
-    text-align: center;
   }
 }
 @media screen and (max-width: 1199px) {
@@ -1939,7 +1928,6 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-
 .section-portfolio__list {
   display: flex;
   gap: 10px;

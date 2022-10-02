@@ -1,16 +1,18 @@
 .section-qualities {
   padding-bottom: 60px;
   padding-top: 60px;
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    @extend %list-style;
+  }
+  &__element {
+    width: 100%;
+  }
 }
-.section-qualities__list {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  @extend %list-style;
-}
-.section-qualities__element {
-  width: 100%;
-}
+
 .section-qualities__logo {
   display: flex;
   border-radius: 4px;
@@ -69,11 +71,12 @@
   .section-qualities {
     padding-bottom: 94px;
     padding-top: 94px;
-  }
-  .section-qualities__element {
-    width: 270px;
-  }
-  .section-qualities__logo {
-    width: 270px;
+
+    &__element {
+      width: 270px;
+    }
+    &__logo {
+      width: 270px;
+    }
   }
 }
